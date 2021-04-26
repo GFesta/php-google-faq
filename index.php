@@ -111,6 +111,15 @@ $faq = [
 
     <!-- Main -->
     <main>
+    <?php foreach ($faq as $key => $questions): ?>
+        <h2> <?php echo $key; ?> </h2>
+
+        <?php foreach ($questions as $key => $question): ?>
+            <?php foreach ($question as $key => $answer): ?>
+            <p> <?php echo $answer; ?></p>
+            <?php endforeach; ?>
+        <?php endforeach; ?>
+        <?php endforeach; ?>
         
 
     </main>
